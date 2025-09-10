@@ -70,5 +70,17 @@ git revert 기존의 커밋ID
 # 작업중인 사항을 임시저장(충돌상황에서 많이 사용) - 스택
 git stash
 
-# 저장한 최신의 작업목록을 꺼내기
+# 저장한 최신의 작업목록을 꺼내서 적용하기
 git stash pop
+
+# 임시저장한 작업목록조회
+git stash list
+
+# 임시저장한 작업내용조회
+git stash show -p 인덱스번호
+
+# 임시저장한 목록은 그대로 놔둔채 특정 인덱스 항목 정룔
+git stash apply 인덱스번호
+
+# 임시저장목록 모두삭제
+git stash clear
